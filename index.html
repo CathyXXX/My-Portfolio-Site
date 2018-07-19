@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Cathy Venter | Home</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="header-inner">
+        <img class="header-logo" src="images/logo.jpg" alt="logo">
+        <div class="header-wrap">
+          <h1 class="header-title">
+            Cathy Venter
+          </h1>
+          <p>Front - End Web Developer</p>
+        </div>
+        <a id="menu" class="header-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"/>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <main class="content">
+        <div class="hero">
+          <article class="description">
+            <h2>Let's work Together</h2>
+            <p>Thank you for visiting my website. <br>Custom design and web development services carefully crafted to suit your needs.</p>
+          </article>
+        </div>
+
+        <section class="featured-work">
+          <h2 class="featured-title">Featured Work</h2>
+          <div class="portfolio">
+            <div class="pixel-art projects">
+              <img src="images/pixel.jpg" class="project-img" alt="pixelart">
+              <h3>Pixel Art Maker</h3>
+              <a href="https://cathyxxx.github.io/Udacity-PixelArtMaker/" class="project-link" target="_blank">View project on Github</a>
+            </div>
+            <div class="lifestyle projects">
+              <img src="images/lifestyle.jpg" class="project-img" alt="lifestyle">
+              <h3>Lifestyle</h3>
+              <a href="https://cathyxxx.github.io/Lifestyle/" class="project-link" target="_blank">View project on Github</a>
+            </div>
+            <div class="adventure projects">
+              <img src="images/adventure.jpg" class="project-img" alt="adventure">
+              <h3>Adventure</h3>
+              <a href="https://cathyxxx.github.io/Adventure/" class="project-link" target="_blank">View project on Github</a>
+            </div>
+          </div>
+        </section>
+        <footer>
+        <ul>
+          <li><a href="mailto:cathyann.cad@gmail.com"><i class="far fa-envelope"></i></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-linkedin"></i><span class="sr-only">LinkedIn</span></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-instagram"></i><span class="sr-only">Instagram</span></a></li>
+          <li><a href="#" target="_blank"><i class="fab fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+        </ul>
+      </footer>
+    </main>
+    <script>
+      /*
+       * Open the hamburger menu icon is clicked.
+       */
+      var menu = document.querySelector('#menu');
+      var main = document.querySelector('main');
+      var drawer = document.querySelector('.nav');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+
+
+    </script>
+  </body>
+</html>
